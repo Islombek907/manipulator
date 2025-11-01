@@ -1,8 +1,8 @@
-import React, { useState } from 'react';
 import { CommandInput } from '../components/CommandInput';
 import { HistoryTable } from '../components/HistoryTable';
 import { GridVisualizer } from '../components/GridVisualizer';
 import { Container, Typography } from '@mui/material';
+import { useState } from 'react';
 
 export const ControlPage = () => {
   const [history, setHistory] = useState<{ raw: string; optimized: string }[]>([]);

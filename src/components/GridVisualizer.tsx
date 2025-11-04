@@ -24,7 +24,7 @@ export const GridVisualizer: React.FC<Props> = ({ commandString, gridSize = 10, 
     let step = 0;
     let x = 0;
     let y = 0;
-    let localSamples = [...samples];
+    const localSamples = [...samples];
     let carryingSample: Cell | null = null;
 
     const interval = setInterval(() => {
